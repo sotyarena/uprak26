@@ -1,0 +1,4 @@
+Okay, you have a shell right now, hack away children!
+
+flag:
+UPRAK26{Shell-from-Vulnerable-GET-Parameter_d6e25e15fd34ff42eb202a099ed39709}

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayam Gulung Jaya Abadi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: url("https://images.unsplash.com/photo-1604908176997-87aef5c2c3ad?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+    nav {
+      background: #e67e22;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd166;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      color: #d35400;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .about, .menu, .contact {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      padding: 30px;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      background: #fff8f0;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #e67e22;
+    }
+    footer {
+      background: #d35400;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ayam Gulung Jaya Abadi</h1>
+    <p>Lezat • Bergizi • Tradisional</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang Kami</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>Tentang Kami</h2>
+    <p>
+      Ayam Gulung Jaya Abadi berdiri sejak 2005 dan telah menjadi ikon kuliner khas Nusantara.
+      Dengan resep turun-temurun, kami menghadirkan ayam gulung dengan bumbu rempah pilihan
+      yang dibalut cita rasa modern. Visi kami adalah menghadirkan hidangan lezat, bergizi,
+      dan terjangkau untuk seluruh keluarga Indonesia.
+    </p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Menu Unggulan</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="3.jpg" alt="Ayam Gulung Original">
+        <h3>Ayam Gulung Original</h3>
+        <p>Ayam gulung dengan bumbu khas rahasia keluarga.</p>
+      </div>
+      <div class="menu-item">
+        <img src="2.jpeg" alt="Ayam Gulung Pedas">
+        <h3>Ayam Gulung Pedas</h3>
+        <p>Sensasi pedas nikmat untuk pecinta cabai.</p>
+      </div>
+      <div class="menu-item">
+        <img src=1.jpeg alt="Paket Keluarga">
+        <h3>Paket Keluarga</h3>
+        <p>Hidangan lengkap ayam gulung dengan nasi, sambal, dan lalapan.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Ayam Gulung Mozarella">
+        <h3>Ayam Gulung Mozarella</h3>
+        <p>Perpaduan ayam gulung dengan keju mozarella leleh.</p>
+        <!--UPRAK26{always-check-the-sourcecode-99e4c8121cd7d4b0d4c6f388df4e4c82}-->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p>
+      📍 Jl. Raya Kuliner No. 45, Malang, Jawa Timur <br>
+      📞 0812-3456-7890 <br>
+      ✉️ ayamgulungjayaabadi@gmail.com
+    </p>
+    <p>
+      Ikuti kami di Instagram: <a href="https://instagram.com" target="_blank">@ayamgulungjayaabadi</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayam Gulung Jaya Abadi. All Rights Reserved.</p>
+  </footer>
+
+  <div id="adminPanel" style="display:none;max-width:600px;margin:40px auto;padding:30px;background:#fff3cd;border:2px solid #ffc107;border-radius:12px;text-align:center;">
+    <h2 style="color:#d35400;margin:0 0 15px;">Admin Panel</h2>
+    <p style="font-size:1.2rem;color:#333;">UPRAK26{cookie-manipulation-is-fun-a1b2c3d4e5f6}</p>
+  </div>
+
+  <script>
+    if (!document.cookie.includes("role=")) {
+      document.cookie = "role=user; path=/";
+    }
+    if (document.cookie.includes("role=admin")) {
+      document.getElementById("adminPanel").style.display = "block";
+    }
+  </script>
+</body>
+</html>
