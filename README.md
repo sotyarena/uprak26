@@ -8,6 +8,55 @@ Aplikasi ini adalah website restoran "Ayam Gulung Jaya Abadi" yang dijalankan me
 
 ---
 
+## Deployment
+
+### Prerequisites
+- Docker dan Docker Compose harus terinstall di sistem
+
+### Langkah Deploy
+
+1. **Clone atau download project ini**
+```bash
+git clone <repository-url>
+cd uprak2023-main
+```
+
+2. **Jalankan Docker Compose**
+```bash
+docker-compose up -d
+```
+Flag `-d` menjalankan container di background.
+
+3. **Verifikasi container berjalan**
+```bash
+docker-compose ps
+```
+Pastikan kedua service (php-apache dan mysql) dalam status `Up`.
+
+4. **Akses aplikasi**
+Buka browser dan akses: `http://localhost`
+
+5. **Verifikasi flag (opsional)**
+Untuk memastikan flag sudah terbuat di `/home/david/flag4.txt`:
+```bash
+docker-compose exec php-apache ls -la /home/david/
+docker-compose exec php-apache cat /home/david/flag4.txt
+```
+
+### Stop & Cleanup
+
+Untuk menghentikan container:
+```bash
+docker-compose down
+```
+
+Untuk menghentikan container dan menghapus volume database:
+```bash
+docker-compose down -v
+```
+
+---
+
 ## Soal & Clue
 
 ### Soal 1 — Flag 1 (Easy)
